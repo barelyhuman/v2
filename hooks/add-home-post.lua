@@ -26,29 +26,29 @@ function Writer(filedata)
 
 			if filecontent then
 				local match = strings.split(filecontent, "---")
-				
+
 				local contentT = {}
-				for k,v in pairs(match) do 
+				for k, v in pairs(match) do
 					if k > 2 then
-						table.insert(contentT,v)
+						table.insert(contentT, v)
 					end
-				end 
+				end
 
 				if match[2] then
 					local frontmatterParsed = yaml.decode(match[2])
 					local date = lib.parse_dates(frontmatterParsed.date)
-          
-          if frontmatterParsed.published then 
-            if not frontmatterParsed.rss_only then
-              table.insert(meta, {
-                content = table.concat(contentT,"---"),
-                slug = name,
-                title = frontmatterParsed.title,
-                date = date,
-                formatteddate = os.date("%d-%m-%Y", date),
-              })
-            end
-          end
+
+					if frontmatterParsed.published then
+						if not frontmatterParsed.rss_only then
+							table.insert(meta, {
+								content = table.concat(contentT, "---"),
+								slug = name,
+								title = frontmatterParsed.title,
+								date = date,
+								formatteddate = os.date("%d-%m-%Y", date),
+							})
+						end
+					end
 				end
 			end
 		end
