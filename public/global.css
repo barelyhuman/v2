@@ -70,7 +70,9 @@ body[data-theme='plastic'] {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   font-size: 81.3%; /*13px*/
   background: var(--bg);
 }
@@ -89,19 +91,19 @@ a {
 }
 
 pre {
-  @apply border border-light rounded-md px-4 py-4 overflow-auto;
+  @apply overflow-auto px-4 py-4 rounded-md border border-light;
 }
 
 code {
-  @apply bg-light text-dark font-mono;
+  @apply font-mono bg-light text-dark;
 }
 
 pre > code.hljs {
-  @apply bg-transparent text-dark font-mono;
+  @apply font-mono bg-transparent text-dark;
 }
 
 blockquote {
-  @apply border-l-light border-l-2 pl-4;
+  @apply pl-4 border-l-2 border-l-light;
 }
 
 ul {
@@ -109,7 +111,7 @@ ul {
 }
 
 ul > li {
-  @apply list-disc leading-normal pb-4;
+  @apply pb-4 leading-normal list-disc;
 }
 
 th {
@@ -118,6 +120,11 @@ th {
 
 .home-nav-button {
   @apply transition-colors duration-150 ease-in-out border flex-1 min-w-fit border-r-0 last:border-r first:rounded-l-md last:rounded-r-md first:after:rounded-l-md last:after:rounded-r-md hover:no-underline rounded-r-none px-4 py-2 border-light text-gray hover:text-dark hover:cursor-pointer relative after:content-[''] after:opacity-0 after:border after:absolute after:-top-[1px] after:-left-[1px] after:-right-[1px] after:z-10 after:-bottom-[1px] after:border-dark hover:after:opacity-100;
+}
+
+#theme-list {
+  background: var(--bg);
+  border: 1px solid var(--accent);
 }
 
 /*  */
