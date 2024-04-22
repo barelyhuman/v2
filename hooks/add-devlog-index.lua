@@ -26,7 +26,6 @@ function Writer(filedata)
 
 				if filecontent then
 					local date = lib.parse_dates(name)
-					print(date)
 					table.insert(meta, {
 						slug = name,
 						content = filecontent,
