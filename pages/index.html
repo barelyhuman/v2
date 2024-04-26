@@ -46,7 +46,7 @@
 </div>
 <div x-data="{showDescription:false}">
   <h1 class="text-3xl text-">Reaper</h1>
-  <p class="text-gray flex items-center gap-3">
+  <p class="flex gap-3 items-center text-gray">
     Minimalist • Open Source Enthusiast • Developer
     <span x-on:click="showDescription=!showDescription" x-cloak>
       <svg
@@ -82,31 +82,84 @@
     </span>
   </p>
   <p
-    class="text-dark max-h-0 overflow-hidden transition-all"
+    class="overflow-hidden max-h-0 transition-all text-dark"
     x-bind:class="showDescription?'mt-5':''"
     x-ref="descContainer"
     x-bind:style="showDescription? 'max-height:' + $refs.descContainer.scrollHeight + 'px':''"
     x-cloak
   >
-   I am a professional Developer from India with over 6 years of experience in Web Development, Internal Tooling, and Automation. I am passionate about exploring different domains through open source projects in my spare time. I believe in keeping things simple and straightforward. If you need any assistance or have any questions, feel free to reach out to me.
+    I am a professional Developer from India with over 6 years of experience in
+    Web Development, Internal Tooling, and Automation. I am passionate about
+    exploring different domains through open source projects in my spare time. I
+    believe in keeping things simple and straightforward. If you need any
+    assistance or have any questions, feel free to reach out to me.
   </p>
 </div>
-<nav class="mt-3 flex flex-wrap w-fit justify-between items-center gap-0">
+<nav class="flex flex-wrap gap-0 justify-between items-center mt-3 w-fit">
   <a class="home-nav-button" href="/writing">Writing</a>
   <a class="home-nav-button" href="/about">About</a>
   <a class="home-nav-button" href="/uses">Uses</a>
   <a class="home-nav-button" href="/contact">Contact</a>
 </nav>
-<a
-  href="/hire"
-  class="text-inherit hover:no-underline hover:cursor-pointer w-fit px-2 inline-flex items-center gap-2"
->
-  <div class="flex items-center">
-    <div
-      class="h-2 w-2 bg-red-600 rounded-full items-center inline-flex justify-center"
+<div class="flex gap-4 items-baseline px-2 pb-2 mt-10 text-sm border-b w-fit border-b-light">
+  <a href="{{.Meta.BaseURL}}devlogs" class="flex gap-1 items-end leading-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="w-4 h-4"
     >
-      <div class="h-1.5 w-1.5 bg-red-400 blur-sm rounded-full"></div>
-    </div>
-  </div>
-  <p class="text-sm m-0 p-0 text-accent"><small class="line-through">Available for Hire</small></p>
-</a>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
+      <path
+        d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4"
+      />
+      <span>Logs</span>
+    </svg>
+  </a>
+  <a href="{{.Meta.BaseURL}}hire" class="flex gap-1 items-end leading-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="w-4 h-4"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M20 4v5l-9 7l-4 4l-3 -3l4 -4l7 -9z" />
+      <path d="M6.5 11.5l6 6" />
+    </svg>
+    <span> Work</span>
+  </a>
+  <a href="{{.Meta.BaseURL}}rss.xml" class="flex gap-1 items-end leading-4">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="p-0 w-4 h-4"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+      <path d="M4 4a16 16 0 0 1 16 16" />
+      <path d="M4 11a9 9 0 0 1 9 9" />
+    </svg>
+    <span>RSS</span>
+  </a>
+</div>
