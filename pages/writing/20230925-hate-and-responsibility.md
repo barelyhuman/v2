@@ -43,7 +43,7 @@ A small gesture gives a tiny boost of motivation to the author. This is good for
 you in the long run since they put an effort to maintain the project because of
 that.
 
-Don't go and star every repo I've made just becuase of this post, or randomly
+Don't go and star every repo I've made just because of this post, or randomly
 donate. If it's been useful, then yes; if not, then don't!
 
 I still need solutions for dealing with people, who have the "World owe's me
