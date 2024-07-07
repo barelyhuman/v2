@@ -36,13 +36,13 @@ write the functionality and then get stuck on building wrappers and abstractions
 for things that don't need abstractions.
 
 This definitely helps since I build tools for the open source world but it
-removes any chances of building a web app / SaSS for me. I start writing code
-for the SaSS and the next moment I have another abstraction over knex to
+removes any chances of building a web app / SaaS for me. I start writing code
+for the SaaS and the next moment I have another abstraction over knex to
 
 - create a simpler ActiveRecord pattern in JS
 - create a mongoose like API on top of knex
 - create another Objection.js but with better models (in my opinion)
-- idk, i'm made a few more random one's as well
+- idk, i've made a few more random one's as well
 
 That's not the only place I fuck up though. I've build engine and module loading
 systems. This did lead to a library called
