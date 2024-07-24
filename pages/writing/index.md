@@ -1,6 +1,9 @@
 # Writing
 
-<div class="flex justify-end items-center">
+<div class="flex items-center justify-end gap-3">
+    <a href="{{.Meta.BaseURL}}rss.xml">
+        RSS
+    </a>
     <a href="/devlogs">
         Dev Logs &rarr;
     </a>
@@ -8,7 +11,7 @@
 <ul class="p-0 px-0">
 <hr class="h-1 border-light"/>
 {{range .Data.writing.pages}}
-<li class="flex gap-3 justify-between items-center py-4 flex-direction">
+<li class="flex items-center justify-between gap-3 py-4 flex-direction">
 <a class="text-gray !hover:no-underline !no-underline hover:text-dark" href="{{print  "/writing/" .slug}}">
 <div class="inline-block">{{.title}}</div>
 </br>
