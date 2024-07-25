@@ -3,7 +3,9 @@
 
 _Eh, Me? Work? Ha!_
 
-**But,** [If I had to "Show Off"](https://showoff.barelyhuman.dev/)
+**But,** [If I had to "Show Off"](https://showoff.barelyhuman.dev/), or if you
+need a professional version of this as a
+[resume](https://barelyhuman.github.io/resume/)
 
 ## OSS
 

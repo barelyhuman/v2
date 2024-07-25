@@ -3,8 +3,9 @@
 I'm trying to be self-employed, so this page lays down the ground work for any
 future contract/freelancing work
 
-Before considering my hire, please review my list of [skills](/skills) and/or
-[resume](/resume) to ensure they align with your requirements.
+Before considering my hire, please review
+[this resume](https://barelyhuman.github.io/resume/) to ensure they align with
+your requirements.
 
 ## Services
 
@@ -18,7 +19,8 @@ Here's a few ways I could be of service to you
 
 - **Contract Work**: If your project needs a Senior Developer with experience in
   (P)React, Node, Golang, Nim, or overall software architecture and solution
-  building, I could help you by promising a few weeks/months in solving that. You can get in touch via an email on <ahoy@barelyhuman.dev>
+  building, I could help you by promising a few weeks/months in solving that.
+  You can get in touch via an email on <ahoy@barelyhuman.dev>
 
 For anything else, you can use either
 [Slack](https://join.slack.com/t/barelyhuman/shared_invite/zt-1r4tm5xtw-oRCGmCQJpAmvPnVAOW90oA)
@@ -38,7 +40,8 @@ do not pose any issues for you.
 I would really like to work with companies that:
 
 - share my passion for Open Source
-- prefer working remotely, since I find myself being a lot more productive in a remote setting
+- prefer working remotely, since I find myself being a lot more productive in a
+  remote setting
 
 **Remote Work Details**
 
