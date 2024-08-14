@@ -54,6 +54,30 @@
     .card .links-group .link-item:hover {
       cursor: pointer;
     }
+
+    @media print{
+    	@page { 
+		size: portrait; 
+		margin: 10mm; 
+		background: #fff;
+		color: #343a40;
+		-webkit-print-color-adjust: exact; 
+		print-color-adjust: exact; 
+	} 
+	#themer {
+		display: none; 
+	}
+	#abstract-lines {
+	display: none;
+	}
+	.backlink {
+		display: none;
+	}
+	.header-block{
+	display: none;
+	}
+
+    }
   </style>
   <section>
     <h1>Reaper</h1>
@@ -108,7 +132,7 @@
     <div>${oss_cards}</div>
   </section>
   <hr />
-  <section>
+  <section class="mt-10">
     <h2>Ending Note</h2>
     <p>
       I am passionate about collaborating with open source companies and
