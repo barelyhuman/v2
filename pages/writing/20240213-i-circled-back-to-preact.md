@@ -100,9 +100,10 @@ I still like the concept and would continue to use it for simple apps where I
 don't need build tooling but this does change the priority of what `nomen` and
 `adex` will focus on.
 
-The development for both of them would start moving forward to make working
-with preact a lot easier since it's going to get hard for preact's team to keep
-up with every new change that react might bring to the stage and I want first class frameworks and libraries for preact instead. 
+The development for both of them would start moving forward to make working with
+preact a lot easier since it's going to get hard for preact's team to keep up
+with every new change that react might bring to the stage and I want first class
+frameworks and libraries for preact instead.
 
 I personally think it's about time the preact ecosystem starts building itself
 slowly and steadily to avoid piggybacking on the react ecosystem.

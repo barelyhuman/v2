@@ -114,6 +114,10 @@ ul > li {
   @apply pb-4 leading-normal list-disc;
 }
 
+ol > li {
+	@apply pb-4 leading-normal list-decimal;
+}
+
 th {
   @apply text-left text-gray;
 }
