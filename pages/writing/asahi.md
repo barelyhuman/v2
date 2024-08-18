@@ -1,7 +1,8 @@
 ---
+title: Asahi Linux Fedora Checklist
+published: true
+date: 18/08/2024
 ---
-
-## Asahi Linux Fedora Cheatsheet
 
 - `$` -> Normal user mode
 - `$!` -> Root user mode
