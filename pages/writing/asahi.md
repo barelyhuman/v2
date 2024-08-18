@@ -2,6 +2,7 @@
 title: Asahi Linux Fedora Checklist
 published: true
 date: 18/08/2024
+rss_only: true
 ---
 
 - `$` -> Normal user mode
