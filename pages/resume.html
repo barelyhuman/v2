@@ -24,12 +24,13 @@
       margin-top: 10px;
       padding-top: 10px;
       border-top: 1px solid var(--light);
+      flex-wrap: wrap;
     }
-    .card .footer :nth-child(1):not(:last-child)::after {
+    .card .footer :nth-child(1):last-child::before {
       content: '•';
       text-decoration: none;
       height: 100%;
-      margin-left: 10px;
+      margin-right: 10px;
       color: var(--light);
       font-size: 15px;
     }
@@ -55,51 +56,59 @@
       cursor: pointer;
     }
 
-    @media print{
-    	@page { 
-		size: portrait; 
-		margin: 10mm; 
-		background: #fff;
-		color: #343a40;
-		-webkit-print-color-adjust: exact; 
-		print-color-adjust: exact; 
-	} 
-	#themer {
-		display: none; 
-	}
-	#abstract-lines {
-	display: none;
-	}
-	.backlink {
-		display: none;
-	}
-	.header-block{
-	display: none;
-	}
+    @media print {
+      @page {
+        font-size: 12px;
+        size: portrait;
+        margin: 3mm;
+        background: #fff;
+        color: #343a40;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      #themer {
+        display: none;
+      }
 
+      .backlink {
+        display: none;
+      }
+      .header-block {
+        display: none;
+      }
+      .card-wrapper {
+        margin-top: 10px;
+      }
+
+      .card {
+        margin-bottom: 10px;
+      }
     }
   </style>
   <section>
-    <h1>Reaper</h1>
-    <p>Minimalist • Open Source Enthusiast • Developer</p>
+    <h1>Siddharth Gelera</h1>
+    <p>
+      Developer and Open Source Enthusiast specialising in web and tooling
+      development
+    </p>
   </section>
 
   <section>
     <h3>About</h3>
     <p>
-      I've been a fullstack developer for ~6 years now. I'm really into building
-      tools and libraries.
+      I've been a fullstack developer since 2017. I'm really into building tools
+      and libraries.
     </p>
-    <br/>
+    <br />
     <p>
       Majority of my professional work has been in and around solving web and
       web architechture problems. This includes building compliant,secure and
       scalable web apps, setting up automations for various tasks, managing
       development processes and guiding beginners
     </p>
-  <br/>
+    <br />
     <p>
-      For specifics, do refer to the <a href="/skills">Skills</a> page
+      For specific skills, do refer to the <a href="/skills">Skills</a> page
     </p>
   </section>
   <section>
@@ -107,10 +116,6 @@
     <p>
       <strong>Website</strong>:
       <a href="https://reaper.is">https://reaper.is</a>
-    </p>
-    <p>
-      <strong>Twitter</strong>:
-      <a href="https://twitter.com/barelyreaper">@barelyreaper</a>
     </p>
     <p>
       <strong>GitHub</strong>:
@@ -138,8 +143,8 @@
       I am passionate about collaborating with open source companies and
       contributing to the development of impactful projects. As a minimalist, I
       believe in creating simple and efficient solutions that solve complex
-      problems. Feel free to reach out to discuss potential opportunities or
-      collaborations.
+      problems. I'm just an email away if you wish to discuss about potential
+      opportunities or collaborations.
     </p>
   </section>
 </main>

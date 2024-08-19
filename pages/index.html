@@ -46,63 +46,31 @@
 </div>
 <div x-data="{showDescription:false}">
   <h1 class="text-3xl text-">Reaper</h1>
-  <p class="flex gap-3 items-center text-gray">
-    Minimalist • Open Source Enthusiast • Developer
-    <span x-on:click="showDescription=!showDescription" x-cloak>
-      <svg
-        class="w-4 h-4"
-        x-show="!showDescription"
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 15 15"
-      >
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          d="M3.135 6.158a.5.5 0 0 1 .707-.023L7.5 9.565l3.658-3.43a.5.5 0 0 1 .684.73l-4 3.75a.5.5 0 0 1-.684 0l-4-3.75a.5.5 0 0 1-.023-.707Z"
-          clip-rule="evenodd"
-        />
-      </svg>
-      <svg
-        class="w-4 h-4"
-        x-show="showDescription"
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 15 15"
-      >
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          d="M3.135 8.842a.5.5 0 0 0 .707.023L7.5 5.435l3.658 3.43a.5.5 0 0 0 .684-.73l-4-3.75a.5.5 0 0 0-.684 0l-4 3.75a.5.5 0 0 0-.023.707Z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </span>
+  <p class="flex items-center gap-3 text-gray">
+    Just another programmer...
   </p>
-  <p
-    class="overflow-hidden max-h-0 transition-all text-dark"
-    x-bind:class="showDescription?'mt-5':''"
-    x-ref="descContainer"
-    x-bind:style="showDescription? 'max-height:' + $refs.descContainer.scrollHeight + 'px':''"
-    x-cloak
-  >
-    I am a professional Developer from India with over 6 years of experience in
-    Web Development, Internal Tooling, and Automation. I am passionate about
-    exploring different domains through open source projects in my spare time. I
-    believe in keeping things simple and straightforward. If you need any
-    assistance or have any questions, feel free to reach out to me.
+  <p class="h-auto mt-5 overflow-hidden transition-all text-dark">
+    I'm a developer from India, with about
+    <span id="exp-years">6 years</span> of experience in Web Development,
+    Tooling, Automation and Parsers. I really enjoy experimenting with different
+    languages and domain and my open source projects reflec that. </br>I
+    believe in simplicity and doing <strong>more with less.</strong>
+    <br />
+    <br />
+    If you need any assistance or have any questions, feel free to reach out to
+    me.
   </p>
 </div>
-<nav class="flex flex-wrap gap-0 justify-between items-center mt-3 w-fit">
+<nav class="flex flex-wrap items-center justify-between gap-0 mt-3 w-fit">
   <a class="home-nav-button" href="/writing">Writing</a>
   <a class="home-nav-button" href="/about">About</a>
   <a class="home-nav-button" href="/uses">Uses</a>
   <a class="home-nav-button" href="/contact">Contact</a>
 </nav>
-<div class="flex gap-4 items-baseline px-2 pb-2 mt-10 text-sm border-b w-fit border-b-light">
-  <a href="{{.Meta.BaseURL}}devlogs" class="flex gap-1 items-end leading-4">
+<div
+  class="flex items-baseline gap-4 px-2 pb-2 mt-4 text-sm border-b w-fit border-b-light"
+>
+  <a href="{{.Meta.BaseURL}}devlogs" class="flex items-end gap-1 leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -123,7 +91,7 @@
       <span>Logs</span>
     </svg>
   </a>
-  <a href="{{.Meta.BaseURL}}hire" class="flex gap-1 items-end leading-4">
+  <a href="{{.Meta.BaseURL}}hire" class="flex items-end gap-1 leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -142,7 +110,7 @@
     </svg>
     <span> Work</span>
   </a>
-  <a href="{{.Meta.BaseURL}}rss.xml" class="flex gap-1 items-end leading-4">
+  <a href="{{.Meta.BaseURL}}rss.xml" class="flex items-end gap-1 leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -153,7 +121,7 @@
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="p-0 w-4 h-4"
+      class="w-4 h-4 p-0"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -163,3 +131,14 @@
     <span>RSS</span>
   </a>
 </div>
+<script defer>
+  const updateExp = () => {
+    const started = new Date(2017, 8, 1)
+    const now = new Date()
+    const inMills = now.getTime() - started.getTime()
+    const inYears = Math.floor(inMills / (1000 * 60 * 60 * 24 * 30 * 12))
+    document.getElementById('exp-years').textContent = `${inYears} years`
+  }
+
+  updateExp()
+</script>

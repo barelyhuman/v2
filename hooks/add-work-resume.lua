@@ -199,12 +199,24 @@ local oss_work = {
 local work = {
 	[1] = {},
 	{
+		name = "NearForm",
+		about = [[
+            Work with OSS contributions from NearForm to various parts of the Node.js ecosystem
+			Maintaining application at scale 
+			Making sure infrastructure design is optimal and fun to work with
+        ]],
+		role = "Senior Software Developer (Jan 2024 - Present)",
+		links = external_link_template({
+			link = "https://www.nearform.com/",
+		}),
+	},
+	{
 		name = "Fountane",
 		about = [[
             Managing teams, handling guidance,
             making sure the architecture and automations works and finally, get hands dirty with code.
         ]],
-		role = "Principal Developer (Nov 2019 - Present)",
+		role = "Principal Developer (Nov 2019 - Jan 2024)",
 		links = external_link_template({
 			link = "https://fountane.com",
 		}),

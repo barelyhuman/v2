@@ -68,30 +68,21 @@
       title="reaper"
       href="https://reaper.is/rss.xml"
     />
-
   </head>
 
   <body
     class="flex flex-col justify-between max-w-3xl text-dark md:justify-center md:min-h-screen"
   >
-
-  <div id="abstract-lines" class="hidden fixed top-0 right-0 bottom-0 left-0 w-screen h-screen -z-10 md:block">
-    <div class="flex overflow-hidden justify-end items-center w-full -z-10">
-      <div class="h-screen w-[100px] mr-[0.5rem]">
-        <div class="origin-bottom h-[6rem] w-full skew-x-[20deg] border-l-2 border-b-4"></div>
-        <div class="h-4/6 w-full origin-top skew-x-[20deg] border-t-4 border-r-2 bg-transparent"></div>
-      </div>
-    </div>
-  </div>
-  
-
-    <div class="header-block block h-56"></div>
+    <div class="block h-56 header-block"></div>
     <div
-      class="flex flex-col gap-4 justify-around p-4 max-w-3xl text-xs leading-relaxed xl:text-base max-h-fit md:px-24 min-h-fit"
+      class="flex flex-col justify-around max-w-3xl gap-4 p-4 text-xs leading-relaxed xl:text-base max-h-fit md:px-24 min-h-fit"
     >
       <div>
         {{if .Data.showNav }}
-        <a  class="backlink flex items-center mb-10 text-sm align-middle w-fit" href="/">
+        <a
+          class="flex items-center mb-10 text-sm align-middle backlink w-fit"
+          href="/"
+        >
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +110,10 @@
     </div>
     <div
       id="themer"
-      class="flex fixed top-5 right-5 flex-col md:top-10 md:right-10"
+      class="fixed flex flex-col top-5 right-5 md:top-10 md:right-10"
     >
       <div
-        class="flex justify-center items-center p-2 w-10 h-10 rounded-md hover:bg-light hover:cursor-pointer"
+        class="flex items-center justify-center w-10 h-10 p-2 rounded-md hover:bg-light hover:cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +180,7 @@
     function addHighlighterStyles() {
       const el = document.createElement('link')
       el.href = 'https://unpkg.com/highlight.js@11.8.0/styles/ascetic.css'
-      el.rel="stylesheet"
+      el.rel = 'stylesheet'
       document.head.appendChild(el)
     }
 
