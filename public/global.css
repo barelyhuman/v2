@@ -91,7 +91,7 @@ a {
 }
 
 pre {
-  @apply overflow-auto px-4 py-4 rounded-md border border-light;
+  @apply px-4 py-4 overflow-auto border rounded-md border-light;
 }
 
 code {
@@ -106,16 +106,17 @@ blockquote {
   @apply pl-4 border-l-2 border-l-light;
 }
 
-ul {
+ul,
+ol {
   @apply pl-5;
 }
 
 ul > li {
-  @apply pb-4 leading-normal list-disc;
+  @apply py-2 leading-normal list-disc;
 }
 
 ol > li {
-	@apply pb-4 leading-normal list-decimal;
+  @apply py-4 leading-normal list-decimal;
 }
 
 th {
@@ -125,7 +126,6 @@ th {
 .home-nav-button {
   @apply transition-colors duration-150 ease-in-out border flex-1 min-w-fit border-r-0 last:border-r first:rounded-l-md last:rounded-r-md first:after:rounded-l-md last:after:rounded-r-md hover:no-underline rounded-r-none px-4 py-2 border-light text-gray hover:text-dark hover:cursor-pointer relative after:content-[''] after:opacity-0 after:border after:absolute after:-top-[1px] after:-left-[1px] after:-right-[1px] after:z-10 after:-bottom-[1px] after:border-dark hover:after:opacity-100;
 }
-
 
 #theme-list {
   background: var(--bg);

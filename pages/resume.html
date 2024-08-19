@@ -56,6 +56,9 @@
       cursor: pointer;
     }
 
+    .note {
+    }
+
     @media print {
       @page {
         font-size: 12px;
@@ -66,16 +69,14 @@
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
-      #themer {
+
+      #themer,
+      .backlink,
+      .header-block,
+      .note {
         display: none;
       }
 
-      .backlink {
-        display: none;
-      }
-      .header-block {
-        display: none;
-      }
       .card-wrapper {
         margin-top: 10px;
       }
@@ -147,4 +148,10 @@
       opportunities or collaborations.
     </p>
   </section>
+  <div>
+    <div class="p-3 border rounded-md text-gray border-gray note">
+      <h6 class="text-accent">Tip:</h6>
+      <p>This page is print media friendly</p>
+    </div>
+  </div>
 </main>

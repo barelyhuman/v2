@@ -1,36 +1,59 @@
----
----
+- [Work](#work)
+  - [Domains](#domains)
+  - [Namespaces](#namespaces)
+  - [Core Values](#core-values)
+  - [Open Source / Contribution Requests](#open-source--contribution-requests)
 
-_Eh, Me? Work? Ha!_
+# Work
 
-**But,** [If I had to "Show Off"](https://showoff.barelyhuman.dev/), or if you
-need a professional version of this as a
-[resume](https://barelyhuman.github.io/resume/)
+This is a general overview of things I've worked on. You can also look at my
+[resume]({{.Meta.BaseURL}}resume) for more details
 
-## OSS
+## Domains
 
-&rarr; [github.com/barelyhuman](https://github.com/barelyhuman)
+In the past I've worked with early stage startups and been part of core teams
+more than once.
 
-## Personal
+Business domains for the same:
 
-&rarr; [TillWhen](https://tillwhen.barelyhuman.dev)
+- Medical Supply Chain
+- Wealth Management and FinTech transactions (India Specific)
+- Car Repair and Invoicing Systems
+- Parking Management
+- Scheduling,Filing systems for Taxes
 
-## Professional
+## Namespaces
 
-&rarr; **Principal Developer** &bull; [Fountane](https://fountane.com/) &bull;
-_Nov 2019 - Present_
+My online presence uses 2 namespaces, barelyhuman and reaper.
 
-&rarr; **Full Stack Developer** &bull; [Valuefy](https://valuefy.com/) &bull;
-_Sep 2018 - Sep 2019_
+[_barelyhuman_](https://barelyhuman.dev) comes from my childhood interest in
+aliens / extraterrestrial beings. The namespace is an umbrella for all my
+community,research, contributions, and knowledge sharing
 
-&rarr; **Full Stack Developer** &bull; [Cartisan](https://wearexenon.com/)
-&bull; _Apr 2018 - Sep 2018_
+_reaper_ is a reminder that no matter how grim the job needs to be done. The
+namespace holds anything that's tied to my personal work and my persona on the
+internet. Just thought I wanted to use the work ethic similar to the _the entity
+of death_ and that's it.
 
-&rarr; **Full Stack Developer** &bull;
-[Scale Swift](https://www.scaleswift.com/) &bull; _Jan 2018 - Feb 2018_
+## Core Values
 
-&rarr; **Frontend Developer** &bull; [RetailIO](https://retailio.in/) &bull;
-_Aug 2017 - Dec 2017_
+I adhere to certain non-negotiable core values. While I understand the
+importance of protecting business implementations and USPs, I hope these values
+do not pose any issues for you.
 
-&rarr; **Angular Developer** &bull; [HoppApp](https://www.hoppapp.com/) &bull;
-_Sep 2016 - May 2017_
+I really like to work with companies that:
+
+- share my passion for Open Source
+- prefer working remotely, since I'm a lot more productive in a remote setting
+
+**Remote Work Details**
+
+- Location: **India**
+- Timezone: **UTC +5.30**
+- Email: **<ahoy@barelyhuman.dev>**
+
+## Open Source / Contribution Requests
+
+If you have any open source projects or contribution requests, please send me an
+email or tag me on the relevant issue. If I have the bandwidth, I will be happy
+to take a look and potentially contribute.
