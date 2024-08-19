@@ -18,7 +18,7 @@ This leads to a pro and a con
 - I'm a developer who dabbles in _everything_
 - I'm _just another_ developer who dabbles in everything.
 
-It's also been bought to my attention that
+It's also been brought to my attention that
 
 1. Most people don't understand what I'm building when I'm working on random
    experimental projects
