@@ -22,8 +22,8 @@ It's also been brought to my attention that
 
 1. Most people don't understand what I'm building when I'm working on random
    experimental projects
-2. The one's they do understand is already built in a much better way by
-   someone else.
+2. The one's they do understand is already built in a much better way by someone
+   else.
 
 I could justify both points but that is not what the post is about and neither
 is it something that needs justification because it was built for me to begin
@@ -41,8 +41,8 @@ have to talk about money.
 It's not hard to talk about money when I'm donating it to others but when it
 comes to asking for it, I seem to freeze up.
 
-Now since there's a minute context of what and where this is coming from, I'd like
-to let people know about Manuel Moreale's One a Month movement for his
+Now since there's a minute context of what and where this is coming from, I'd
+like to let people know about Manuel Moreale's One a Month movement for his
 [People and Blogs](https://peopleandblogs.com) newsletter series and also that
 my [Github Sponsors page](https://github.com/sponsors/barelyhuman/) doesn't have
 a minimum amount tier. It's been that way for ever and I would like to believe
