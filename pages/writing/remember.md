@@ -9,3 +9,5 @@ date: 10/09/2024
 3. It's okay to build things for yourself and not have any users 
 4. Build for learning over earning
 5. Help people as much as you can
+6. Learn to obsess over quality 
+7. Build at your own pace and be consistent about it
