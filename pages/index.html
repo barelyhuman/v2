@@ -46,10 +46,10 @@
 </div>
 <div x-data="{showDescription:false}">
   <h1 class="text-3xl text-">Reaper</h1>
-  <p class="flex items-center gap-3 text-gray">
+  <p class="flex gap-3 items-center text-gray">
     Just another programmer...
   </p>
-  <p class="h-auto mt-5 overflow-hidden transition-all text-dark">
+  <p class="overflow-hidden mt-5 h-auto transition-all text-dark">
     I'm a developer from India, with about
     <span id="exp-years">6 years</span> of experience in Web Development,
     Tooling, Automation and Parsers. I really enjoy experimenting with different
@@ -61,7 +61,7 @@
     me.
   </p>
 </div>
-<nav class="flex flex-wrap items-center justify-between gap-0 mt-3 w-fit">
+<nav class="flex flex-wrap items-center mt-3 w-fit">
   <a class="home-nav-button" href="/writing">Writing</a>
   <a class="home-nav-button" href="/about">About</a>
   <a class="home-nav-button" href="/uses">Uses</a>
@@ -69,9 +69,9 @@
   <a class="home-nav-button" href="/contact">Contact</a>
 </nav>
 <div
-  class="flex items-baseline gap-4 px-2 pb-2 mt-4 text-sm border-b w-fit border-b-light"
+  class="flex gap-4 items-baseline px-2 pb-2 mt-4 text-sm border-b w-fit border-b-light"
 >
-  <a href="{{.Meta.BaseURL}}devlogs" class="flex items-end gap-1 leading-4">
+  <a href="{{.Meta.BaseURL}}devlogs" class="flex gap-1 items-end leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -92,7 +92,7 @@
       <span>Logs</span>
     </svg>
   </a>
-  <a href="{{.Meta.BaseURL}}work" class="flex items-end gap-1 leading-4">
+  <a href="{{.Meta.BaseURL}}work" class="flex gap-1 items-end leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -111,7 +111,7 @@
     </svg>
     <span> Work</span>
   </a>
-  <a href="{{.Meta.BaseURL}}rss.xml" class="flex items-end gap-1 leading-4">
+  <a href="{{.Meta.BaseURL}}rss.xml" class="flex gap-1 items-end leading-4">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -122,7 +122,7 @@
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="w-4 h-4 p-0"
+      class="p-0 w-4 h-4"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />

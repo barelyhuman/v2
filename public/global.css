@@ -91,7 +91,7 @@ a {
 }
 
 pre {
-  @apply px-4 py-4 overflow-auto border rounded-md border-light;
+  @apply overflow-auto px-4 py-4 rounded-md border border-light;
 }
 
 code {
@@ -128,7 +128,9 @@ img {
 }
 
 .home-nav-button {
-  @apply transition-colors duration-150 ease-in-out border flex-1 min-w-fit border-r-0 last:border-r first:rounded-l-md last:rounded-r-md first:after:rounded-l-md last:after:rounded-r-md hover:no-underline rounded-r-none px-4 py-2 border-light text-gray hover:text-dark hover:cursor-pointer relative after:content-[''] after:opacity-0 after:border after:absolute after:-top-[1px] after:-left-[1px] after:-right-[1px] after:z-10 after:-bottom-[1px] after:border-dark hover:after:opacity-100;
+  @apply flex-1 w-full transition-colors duration-150 ease-in-out min-w-fit;
+  @apply border border-r-[0.5px] last:border-r hover:no-underline sm:rounded-r-none px-4 py-2 border-light text-gray hover:text-dark hover:cursor-pointer relative after:content-[''] after:opacity-0 after:border after:absolute after:-top-[1px] after:-left-[1px] after:-right-[1px] after:z-10 after:-bottom-[1px] after:border-dark hover:after:opacity-100;
+  @apply rounded-r-none  rounded-l-none rounded-t-none rounded-b-none sm:first:rounded-l-md sm:last:rounded-r-md sm:first:after:rounded-l-md sm:last:after:rounded-r-md
 }
 
 
