@@ -2,6 +2,7 @@
 title: Announcing Ping 
 published: true 
 date: 18/09/2024
+image_url: /assets/ping-beta-visual.jpeg
 ---
 
 Announcing **Ping**, a simple no sign up solution for uptime notifications.
