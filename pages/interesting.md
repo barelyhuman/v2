@@ -5,6 +5,8 @@
 
 Basically collection of links I'd like to share with people
 
+- [Everything about HTTP - http.dev](https://http.dev)
+
 - [Yagiz Nizipli](http://yagniz.co) - Co-Author of
   [Ada URL](https://github.com/ada-url/ada)
 
