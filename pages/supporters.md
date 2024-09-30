@@ -1,6 +1,6 @@
 ---
 title: Supporters
-image: "https://reaper.is/assets/one-a-month.png"
+image_url: "https://reaper.is/assets/one-a-month.png"
 ---
 
 [![](/assets/one-a-month.png)](https://ko-fi.com/barelyreaper)
@@ -25,3 +25,27 @@ You can support me by sponsoring on one of the links below:
 # Supporters
 
 People that are making it possible for me to make and maintain more projects
+
+{{if .Data.sponsors.current}}
+### Current
+<div class="flex flex-wrap gap-3 items-center">
+{{ range .Data.sponsors.current}}
+<div class="flex flex-col items-center">
+    <img src="{{.avatar}}" class="w-6 h-6 rounded-full" />
+    <span class="text-xs">{{.username}}</span>
+</div>
+{{ end }}
+</div>
+{{end}}
+
+{{if .Data.sponsors.past}}
+### Past
+<div class="flex flex-wrap gap-3 items-center">
+{{ range .Data.sponsors.past}}
+<div class="flex flex-col items-center">
+    <img src="{{.avatar}}" class="w-6 h-6 rounded-full" />
+    <span class="text-xs">{{.username}}</span>
+</div>
+{{ end }}
+</div>
+{{ end }}
