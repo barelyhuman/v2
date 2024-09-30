@@ -1,5 +1,6 @@
 ---
 title: Supporters
+image: "https://reaper.is/assets/one-a-month.png"
 ---
 
 [![](/assets/one-a-month.png)](https://ko-fi.com/barelyreaper)
