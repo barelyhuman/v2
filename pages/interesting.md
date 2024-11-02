@@ -5,7 +5,7 @@
 
 Basically collection of links I'd like to share with people
 
-- [<snow-fall> component](https://zachleat.github.io/snow-fall/demo.html) - webcomponent for adding snowfall to web elements
+- [snow-fall component](https://zachleat.github.io/snow-fall/demo.html) - webcomponent for adding snowfall to web elements
 - [Open Props](https://open-props.style/#overview) - Consistent utility variables for sane and consistent CSS development.
 
 - [Everything about HTTP - http.dev](https://http.dev)
