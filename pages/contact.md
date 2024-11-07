@@ -1,6 +1,7 @@
 **Online**
 
 [Twitter](https://twitter.com/barelyreaper)\
+[🦋 BlueSky](https://bsky.app/profile/reaper.is)\
 [Github](https://github.com/barelyhuman)\
 <ahoy@barelyhuman.dev>
 
