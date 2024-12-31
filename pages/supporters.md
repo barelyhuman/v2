@@ -21,6 +21,7 @@ You can support me by sponsoring on one of the links below:
 
 - [Github Sponsors](https://github.com/sponsors/barelyhuman)
 - [Ko-Fi](https://ko-fi.com/barelyreaper)
+- [Gumroad](https://barelyreaper.gumroad.com/coffee)
 
 # Supporters
 
