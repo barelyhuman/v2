@@ -52,7 +52,7 @@ Might end up being both but still, the change I'm looking for might not be that
 easy, but then , nothing is.
 
 If you are someone from India and have been doing Indie Hacking, I'd like to get
-in touch so do sent through a mail at <ahoy@barelyhuman.dev>. I've got a few
+in touch so do sent through a mail at <contact@reaper.is>. I've got a few
 questions that you might be able to help with.
 
 Well that's been all for the day, just writing my thinking down; to find a

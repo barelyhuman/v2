@@ -50,7 +50,7 @@ I really like to work with companies that:
 
 - Location: **India**
 - Timezone: **UTC +5.30**
-- Email: **<ahoy@barelyhuman.dev>**
+- Email: **<contact@reaper.is>**
 
 ## Open Source / Contribution Requests
 
