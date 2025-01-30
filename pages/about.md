@@ -18,6 +18,6 @@ You can also get an overview of [skills](/skills) if you wish to.
 Here's a few ways you to get in touch, feel free to reach out for help.
 
 - **Twitter**: [barelyreaper](https://twitter.com/barelyreaper)
-- **Mail**: [ahoy@barelyhuman.dev](mailto:ahoy@barelyhuman.dev)
+- **Mail**: [contact@reaper.is](mailto:contact@reaper.is)
 
 What am I doing [now](/now)?
