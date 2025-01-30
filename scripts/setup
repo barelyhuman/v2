@@ -35,7 +35,7 @@ install_tailwind(){
   esac
 
   binary_name="tailwindcss-${os}-${arch}"
-  curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/${binary_name}
+  curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.16/${binary_name}
   chmod +x ./${binary_name}
   mv ${binary_name} ./bin/tailwindcss
 }
