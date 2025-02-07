@@ -1,59 +1,90 @@
-- [Work](#work)
-  - [Domains](#domains)
-  - [Namespaces](#namespaces)
-  - [Core Values](#core-values)
-  - [Open Source / Contribution Requests](#open-source--contribution-requests)
+# Side Projects
 
-# Work
+<div class="flex flex-col gap-4 mt-10 mb-10">
+  <div class="flex flex-col gap-2 pl-4 border-l border-light">
+      <h4>Ping</h4>
+      <div class="flex flex-col gap-4">
+        <div class="text-gray">A non intrusive and simple uptime status check</div>
+      </div>
+  </div>
 
-This is a general overview of things I've worked on. You can also look at my
-[resume]({{.Meta.BaseURL}}resume) for more details
+  <div class="flex flex-col gap-2 pl-4 border-l border-light">
+      <h4>preact-island-plugins</h4>
+      <div class="flex flex-col gap-4">
+        <div class="text-gray">Low Level plugins to help build island based frameworks and build servers for preact</div>
+      </div>
+  </div>
 
-## Domains
+  <div class="flex flex-col gap-2 pl-4 border-l border-light">
+      <h4>Goblin</h4>
+      <div class="flex flex-col gap-4">
+        <div class="text-gray">Go allows building beautiful CLI programs and you might be serving to a userbase that may or may not have go lang installed. This is where Goblin comes in. It builds the binary for the user's system on demand. There's some limitations to it but that's the basic concept</div>
+      </div>
+  </div>
+  <div class="flex flex-col gap-2 pl-4 border-l border-light">
+    <h4>CRI</h4>
+    <div class="flex flex-col gap-4">
+    <div class="text-gray">Custom Rom Index, a simple straightforward curation of custom roms for various android devices</div>
+    </div>
+  </div>
+</div>
 
-In the past I've worked with early stage startups and been part of core teams
-more than once.
+## Work Experience
 
-Business domains for the same:
+<div class="flex flex-col gap-4 mt-10">
+  <div class="flex flex-col gap-2 pl-4 border-l border-light">
+      <h4>NearForm</h4>
+      <div class="flex flex-col gap-4">
+        <div>
+          <p class="text-gray">Senior Software Developer</p>
+          <p class="text-xs text-gray">Jan 2024 - Present</p>
+        </div>
+        <div class="mt-6 text-gray">Work with OSS contributions from NearForm to various parts of the Node.js ecosystem Maintaining application at scale Making sure infrastructure design is optimal and fun to work with</div>  
+      </div>
+  </div>
 
-- Medical Supply Chain
-- Wealth Management and FinTech transactions (India Specific)
-- Car Repair and Invoicing Systems
-- Parking Management
-- Scheduling,Filing systems for Taxes
+<div class="flex flex-col gap-2 pl-4 mt-4 border-l border-light">
+    <h4>Fountane</h4>
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="text-gray">Principal Developer</p>
+        <p class="text-xs text-gray">Nov 2019 - Jan 2024</p>
+      </div>
+      <div class="mt-6 text-gray">Managing teams, handling guidance, making sure the architecture and automations works and finally, get hands dirty with code</div>  
+    </div>
+</div>
 
-## Namespaces
+<div class="flex flex-col gap-2 pl-4 mt-4 border-l border-light">
+    <h4>Valuefy</h4>
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="text-gray">Full Stack Developer</p>
+        <p class="text-xs text-gray">Sep 2018 - Sep 2019</p>
+      </div>
+      <div class="mt-6 text-gray">Fintech is hard, number crunching, maintaing curation engines and handling wealth management based transactions all with the help of some code and making sure it worked</div>  
+    </div>
+</div>
 
-My online presence uses 2 namespaces, barelyhuman and reaper.
+<div class="flex flex-col gap-2 pl-4 mt-4 border-l border-light">
+    <h4>Cartisan</h4>
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="text-gray">Full Stack Developer</p>
+        <p class="text-xs text-gray">Apr 2018 - Sep 2018</p>
+      </div>
+      <div class="mt-6 text-gray">Worked with talented individuals on getting the simple car service and invoicing platform for the Indian market. This involved managing sequences of operations and avoiding race conditions, keep data clean, and refactoring some old code</div>  
+    </div>
+</div>
 
-[_barelyhuman_](https://barelyhuman.dev) comes from my childhood interest in
-aliens / extraterrestrial beings. The namespace is an umbrella for all my
-community,research, contributions, and knowledge sharing
+<div class="flex flex-col gap-2 pl-4 mt-4 border-l border-light">
+    <h4>RetailIO</h4>
+    <div class="flex flex-col gap-4">
+      <div>
+        <p class="text-gray">Frontend Developer</p>
+        <p class="text-xs text-gray">Jan 2018- Apr 2018</p>
+      </div>
+      <div class="mt-6 text-gray">Met my first set of mentors here, worked on the UI of 2 products. SuperTax and RetailIO, one with React and one with Angular respectively. The time spent was short due to various unforseen reasons but it was worth it. Made components and a tiny UI library for the above 2 products internally</div>  
+    </div>
+</div>
 
-_reaper_ is a reminder that no matter how grim the job needs to be done. The
-namespace holds anything that's tied to my personal work and my persona on the
-internet. Just thought I wanted to use the work ethic similar to the _the entity
-of death_ and that's it.
-
-## Core Values
-
-I adhere to certain non-negotiable core values. While I understand the
-importance of protecting business implementations and USPs, I hope these values
-do not pose any issues for you.
-
-I really like to work with companies that:
-
-- share my passion for Open Source
-- prefer working remotely, since I'm a lot more productive in a remote setting
-
-**Remote Work Details**
-
-- Location: **India**
-- Timezone: **UTC +5.30**
-- Email: **<contact@reaper.is>**
-
-## Open Source / Contribution Requests
-
-If you have any open source projects or contribution requests, please send me an
-email or tag me on the relevant issue. If I have the bandwidth, I will be happy
-to take a look and potentially contribute.
+</div>

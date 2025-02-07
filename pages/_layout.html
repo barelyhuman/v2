@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {{if eq .Data.html.title nil}}
@@ -71,12 +71,12 @@
   </head>
 
   <body
-    class="flex flex-col justify-between max-w-3xl text-dark md:justify-center md:min-h-screen"
+    class="flex flex-col justify-between mx-auto max-w-4xl text-dark md:justify-center md:min-h-screen"
   >
-    <div class="block h-56 header-block"></div>
     <div
-      class="flex flex-col justify-around max-w-3xl gap-4 p-4 text-xs leading-relaxed xl:text-base max-h-fit md:px-24 min-h-fit"
+      class="flex flex-col gap-4 justify-around p-4 max-w-4xl text-xs leading-relaxed xl:text-base max-h-fit md:px-24 min-h-fit"
     >
+      <div class="block h-56 sm:hidden sm:h-0 header-block"></div>
       <div>
         {{if .Data.showNav }}
         <a
@@ -108,169 +108,5 @@
       </div>
       {{.Content}}
     </div>
-    <div
-      id="themer"
-      class="fixed flex flex-col top-5 right-5 md:top-10 md:right-10"
-    >
-      <div
-        class="flex items-center justify-center w-10 h-10 p-2 rounded-md hover:bg-light hover:cursor-pointer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95"></path>
-          <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44"></path>
-          <path d="M3.69 15.44a9 9 0 0 0 1.95 2.92"></path>
-          <path d="M8.56 20.31a9 9 0 0 0 3.44 .69"></path>
-          <path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95"></path>
-          <path d="M20.31 15.44a9 9 0 0 0 .69 -3.44"></path>
-          <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92"></path>
-          <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69"></path>
-        </svg>
-      </div>
-      <div
-        id="theme-list"
-        class="flex absolute w-[200px] right-0 top-10 flex-col hidden rounded-md"
-      ></div>
-    </div>
   </body>
-
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
-
-  <script type="module" defer>
-    import {
-      init,
-      getCurrentTheme,
-      setTheme,
-    } from 'https://esm.sh/@barelyreaper/themer@2.0.1'
-    import nprogress from 'https://esm.sh/nprogress'
-
-    const themes = [
-      'light',
-      'dark',
-      'hacker',
-      'system',
-      'rose-pine',
-      'rose-pine-dawn',
-      'plastic',
-    ]
-
-    const themerToggle = document.getElementById('themer')
-    const themerList = document.getElementById('theme-list')
-
-    handleURLChange()
-
-    loadStyle('/styles.css', () => {
-      // sub to the browser changes
-      init()
-      addThemeHandlers()
-      addHighlighterStyles()
-      hljs.highlightAll()
-    })
-
-    function addHighlighterStyles() {
-      const el = document.createElement('link')
-      el.href = 'https://unpkg.com/highlight.js@11.8.0/styles/ascetic.css'
-      el.rel = 'stylesheet'
-      document.head.appendChild(el)
-    }
-
-    function addThemeHandlers() {
-      themerToggle.addEventListener('touchend', () => {
-        themerList.classList.toggle('hidden')
-      })
-
-      themerToggle.addEventListener('mouseenter', () => {
-        themerList.classList.remove('hidden')
-      })
-
-      themerToggle.addEventListener('mouseleave', () => {
-        themerList.classList.add('hidden')
-      })
-
-      themes.forEach(theme => {
-        const d = document.createElement('button')
-        d.innerHTML = `${theme}`
-
-        d.addEventListener('touchend', () => {
-          setTheme(theme)
-        })
-
-        d.addEventListener('click', () => {
-          setTheme(theme)
-        })
-        ;[
-          'inline-flex',
-          'justify-content',
-          'items-center',
-          'w-full',
-          'px-2',
-          'py-2',
-          'hover:bg-light',
-          'rounded-md',
-        ].map(x => d.classList.add(x))
-
-        themerList.appendChild(d)
-      })
-    }
-
-    function loadStyle(url, hook = () => {}) {
-      let style = document.createElement('style')
-      style.textContent = `@import "${url}"`
-      let handler = setInterval(function () {
-        try {
-          style.sheet.cssRules
-          hook()
-          clearInterval(handler)
-          document.head.removeChild(style)
-        } catch (e) {}
-      }, 10)
-      document.head.appendChild(style)
-    }
-
-    function handleURLChange() {
-      window.addEventListener('DOMContentLoaded', () => {
-        const anchors = document.getElementsByTagName('a')
-        for (let i = 0; i < anchors.length; i += 1) {
-          const elem = anchors[i]
-          elem.addEventListener('click', e => {
-            nprogress.set(0.25)
-            return false
-          })
-        }
-      })
-
-      window.addEventListener(
-        'DOMContentLoaded',
-        () => {
-          nprogress.set(0.5)
-        },
-        {
-          once: true,
-        }
-      )
-
-      window.addEventListener(
-        'load',
-        () => {
-          setTimeout(() => {
-            nprogress.done(true)
-          }, 0)
-        },
-        {
-          once: true,
-        }
-      )
-    }
-  </script>
-  <script src="//unpkg.com/alpinejs" defer></script>
 </html>

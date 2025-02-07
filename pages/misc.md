@@ -22,6 +22,7 @@
 
 ## Cool People
 
+- [Mellow](https://mellow.dev/)
 - [Gautam](https://backendengineer.net/)
 - [Paco](https://paco.me/)
 - [Andrew Prifer](https://github.com/AndrewPrifer)
@@ -32,7 +33,5 @@
 
 ## Other Links
 
-- [Games](/games.html)
-- [Things](/things.html)
 - [Cheatsheets](/cheatsheets/index.html)
 - [Bookmarks](/interesting.html)

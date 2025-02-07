@@ -44,94 +44,40 @@
     </g>
   </svg>
 </div>
-<div x-data="{showDescription:false}">
+<div>
   <h1 class="text-3xl text-">Reaper</h1>
-  <p class="flex gap-3 items-center text-gray">
-    Just another programmer...
-  </p>
+  <p class="flex gap-3 items-center text-gray">Just another programmer...</p>
   <p class="overflow-hidden mt-5 h-auto transition-all text-dark">
-    I'm a developer from India, with about
-    <span id="exp-years">6 years</span> of experience in Web Development,
-    Tooling, Automation and Parsers. I really enjoy experimenting with different
-    languages and domain and my open source projects reflect that. </br>I
-    believe in simplicity and doing <strong>more with less.</strong>
-    <br />
-    <br />
-    If you need any assistance or have any questions, feel free to reach out to me
+    I am a seasoned developer from India with over
+    <span id="exp-years" class="font-semibold text-gray"> 7 years </span> of
+    experience specializing in Web Development, Tooling, Automation, and
+    Parsers. I have a strong passion for experimenting with diverse programming
+    languages and exploring new domains, with a focus on creating efficient,
+    scalable solutions.
+  </p>
+  <br />
+  <p>
+    My open-source contributions reflect my commitment to innovation and
+    simplicity, always striving to do more with less while maintaining high
+    standards of quality.
   </p>
 </div>
-<nav class="flex flex-wrap items-center mt-3 w-fit">
-  <a class="home-nav-button" href="/writing">Writing</a>
-  <a class="home-nav-button" href="/about">About</a>
-  <a class="home-nav-button" href="/uses">Uses</a>
-  <a class="home-nav-button" href="/supporters">Support</a>
-  <a class="home-nav-button" href="/contact">Contact</a>
-</nav>
-<div
-  class="flex gap-4 items-baseline px-2 pb-2 mt-4 text-sm border-b w-fit border-b-light"
->
-  <a href="{{.Meta.BaseURL}}devlogs" class="flex gap-1 items-end leading-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="w-4 h-4"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
-      <path
-        d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4"
-      />
-      <span>Logs</span>
-    </svg>
-  </a>
-  <a href="{{.Meta.BaseURL}}work" class="flex gap-1 items-end leading-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="w-4 h-4"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M20 4v5l-9 7l-4 4l-3 -3l4 -4l7 -9z" />
-      <path d="M6.5 11.5l6 6" />
-    </svg>
-    <span> Work</span>
-  </a>
-  <a href="{{.Meta.BaseURL}}rss.xml" class="flex gap-1 items-end leading-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="p-0 w-4 h-4"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-      <path d="M4 4a16 16 0 0 1 16 16" />
-      <path d="M4 11a9 9 0 0 1 9 9" />
-    </svg>
-    <span>RSS</span>
-  </a>
+<div>
+  <nav class="mt-2">
+    <ul class="flex gap-12 pl-0 ml-0 list-none">
+      <li class="list-none">
+        <a class="inline-block hover:cursor-pointer" href="/writing">Writing</a>
+      </li>
+      <li class="list-none">
+        <a class="inline-block hover:cursor-pointer" href="/work">Work</a>
+      </li>
+      <li class="list-none">
+        <a class="inline-block hover:cursor-pointer" href="/misc">Misc</a>
+      </li>
+    </ul>
+  </nav>
 </div>
-<script defer>
+<script type="module">
   const updateExp = () => {
     const started = new Date(2017, 8, 1)
     const now = new Date()
@@ -139,6 +85,5 @@
     const inYears = Math.floor(inMills / (1000 * 60 * 60 * 24 * 30 * 12))
     document.getElementById('exp-years').textContent = `${inYears} years`
   }
-
   updateExp()
 </script>
